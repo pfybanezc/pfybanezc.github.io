@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-red-400 text-white text-2xl font-bold text-center py-6">
+        HEADER
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-2 mt-2">
+
+        <nav class="bg-orange-300 flex justify-center items-center py-6 md:col-span-8">
+            <h2 class="text-2xl font-bold">NAV</h2>
+        </nav>
+
+        <div class="bg-green-300 flex justify-center items-center py-6 md:col-span-4 px-4">
+        <input
+            type="date"
+            class="w-full border border-gray-500 rounded-md px-3 py-2 bg-white"
+        >
+        </div>
+
+    </div>
+
+    <main class="grid grid-cols-1 md:grid-cols-12 gap-2 mt-2">
+
+        <section class="bg-red-100 p-5 md:col-span-8 min-h-[420px]">
+
+            <p class="text-lg leading-8 text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Optio odio, culpa illum quibusdam, ipsum asperiores iusto
+                nostrum unde pariatur eaque mollitia dolorem assumenda
+                maxime amet velit omnis? Temporibus, nulla ex.
+            </p>
+
+        </section>
+
+        <aside class="bg-blue-100 flex justify-center items-center md:col-span-4 min-h-[420px]">
+
+            <h2 class="text-4xl font-bold text-blue-500">
+                ASIDE
+            </h2>
+
+        </aside>
+
+    </main>
+
+    <section class="bg-white p-5 block lg:hidden">
+
+    <p class="text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Maiores nemo ab enim ipsum modi quo odit molestiae
+        necessitatibus exercitationem, eaque consequatur.
+    </p>
+
+    </section>
+
+    <footer class="bg-purple-500 text-center text-2xl font-bold py-6 mt-4">
+
+        FOOTER
+
+    </footer>
+
+</body>
+</html>
