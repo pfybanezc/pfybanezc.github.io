@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mundo Gourmet</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
+
 body{
     cursor:url("img/Cursorp.png") 16 16, auto;
 }
 
 .hero-bg{
-
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,.6),
-        rgba(0,0,0,.6)
-    ),
-    url("img/Fondo.jpg");
-
+    background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("img/Fondo.jpg");
     background-size:cover;
     background-position:center;
-
 }
 
 .paises-bg{
-
-    background-image:
-    linear-gradient(
-        rgba(255,255,255,.85),
-        rgba(255,255,255,.85)
-    ),
-    url("img/Fondo2.jpg");
-
+    background-image:linear-gradient(rgba(255,255,255,.85),rgba(255,255,255,.85)),url("img/Fondo2.jpg");
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
-
 }
+
 
 @media(max-width:768px){
 
@@ -47,41 +36,35 @@ body{
     }
 
     #menu.activo{
-
         display:flex;
-
     }
+
 }
+
 
 body.dark{
-
     background:#121212;
-
 }
+
 
 body.dark .bg-white{
-
     background:#1f1f1f;
     color:white;
-
 }
+
 
 body.dark .text-gray-600{
-
     color:#ddd;
-
 }
+
 
 body.dark .text-gray-800{
-
     color:white;
-
 }
 
+
 body.dark .paises-bg{
-
-background-image:linear-gradient(rgba(20,20,20,.9),rgba(20,20,20,.9)),  url("img/Fondo2.jpg");
-
+    background-image:linear-gradient(rgba(20,20,20,.9),rgba(20,20,20,.9)),url("img/Fondo2.jpg");
 }
 
 </style>
@@ -92,1843 +75,470 @@ background-image:linear-gradient(rgba(20,20,20,.9),rgba(20,20,20,.9)),  url("img
 
 <header class="fixed top-0 left-0 w-full z-50 bg-black flex items-center justify-between px-5 md:px-16 py-5 flex-wrap">
 
-<div class=" text-orange-500 text-2xl md:text-3xl font-bold">
-
+<div class="text-orange-500 text-2xl md:text-3xl font-bold">
 Mundo Gourmet
-
 </div>
 
 <button class="menu-btn md:hidden text-white text-4xl" onclick="toggleMenu(this)">
-
 ☰
-
 </button>
 
-<nav id="menu" class=" hidden md:flex flex-col md:flex-row w-full md:w-auto bg-black md:bg-transparent mt-4 md:mt-0">
+<nav id="menu" class="hidden md:flex flex-col md:flex-row w-full md:w-auto bg-black md:bg-transparent mt-4 md:mt-0">
 
-<a
-
-href="#"
-
-class="
-text-white
-text-lg
-mx-3
-py-3
-md:py-0
-hover:text-orange-500
-">
-
+<a href="#" class="text-white text-lg mx-3 py-3 md:py-0 hover:text-orange-500">
 Inicio
-
 </a>
 
-
-
-<a
-
-href="#"
-
-class="
-text-white
-text-lg
-mx-3
-py-3
-md:py-0
-hover:text-orange-500
-">
-
+<a href="#" class="text-white text-lg mx-3 py-3 md:py-0 hover:text-orange-500">
 Recetas
-
 </a>
 
-
-
-<a
-
-href="#"
-
-class="
-text-white
-text-lg
-mx-3
-py-3
-md:py-0
-hover:text-orange-500
-">
-
+<a href="#" class="text-white text-lg mx-3 py-3 md:py-0 hover:text-orange-500">
 Países
-
 </a>
 
-
-
-<a
-
-href="#"
-
-class="
-text-white
-text-lg
-mx-3
-py-3
-md:py-0
-hover:text-orange-500
-">
-
+<a href="#" class="text-white text-lg mx-3 py-3 md:py-0 hover:text-orange-500">
 Blog
-
 </a>
 
-
-
-
-<a
-
-href="#"
-
-class="
-text-white
-text-lg
-mx-3
-py-3
-md:py-0
-hover:text-orange-500
-">
-
+<a href="#" class="text-white text-lg mx-3 py-3 md:py-0 hover:text-orange-500">
 Contacto
-
 </a>
-
-
 
 </nav>
 
-
-
-
-
-
-
-<button
-
-id="modo"
-
-onclick="cambiarModo()"
-
-class="
-bg-orange-500
-text-white
-px-4
-py-2
-rounded-lg
-hover:bg-orange-600
-transition
-text-sm
-md:text-base
-">
+<button id="modo" onclick="cambiarModo()" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition text-sm md:text-base">
 
 🌙 Modo Oscuro
 
 </button>
 
-
-
 </header>
 
+<section class="hero-bg w-full min-h-screen flex items-center justify-center text-center pt-28">
 
+<div class="w-11/12 md:w-3/4 text-white">
 
-
-
-
-
-
-<!-- HERO -->
-
-
-<section
-
-class="
-hero-bg
-w-full
-min-h-screen
-flex
-items-center
-justify-center
-text-center
-pt-28
-">
-
-
-<div
-
-class="
-w-11/12
-md:w-3/4
-text-white
-">
-
-
-<h1
-
-class="
-text-4xl
-md:text-6xl
-font-bold
-mb-6
-">
-
+<h1 class="text-4xl md:text-6xl font-bold mb-6">
 Descubre sabores de todo el planeta
-
 </h1>
 
-
-
-
-<p
-
-class="
-text-lg
-md:text-2xl
-leading-8
-mb-8
-">
-
-Explora recetas, ingredientes y platos típicos
-de diferentes países y culturas gastronómicas.
-
+<p class="text-lg md:text-2xl leading-8 mb-8">
+Explora recetas, ingredientes y platos típicos de diferentes países y culturas gastronómicas.
 </p>
 
-
-
-
-
-<button
-
-class="
-bg-orange-500
-text-white
-px-6
-py-3
-md:px-8
-md:py-4
-rounded-lg
-text-lg
-hover:bg-orange-600
-hover:scale-105
-transition
-">
-
+<button class="bg-orange-500 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-lg hover:bg-orange-600 hover:scale-105 transition">
 Ver Recetas
-
 </button>
 
-
-
-
-
-<button
-
-onclick="calificar()"
-
-class="
-bg-orange-500
-text-white
-px-6
-py-3
-md:px-8
-md:py-4
-rounded-lg
-text-lg
-hover:bg-orange-600
-hover:scale-105
-transition
-ml-2
-">
-
+<button onclick="calificar()" class="bg-orange-500 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-lg hover:bg-orange-600 hover:scale-105 transition ml-2">
 ⭐ Calificar Página
-
 </button>
-
-
 
 </div>
 
-
 </section>
 
-<!-- COCINAS MÁS POPULARES -->
+<section class="paises-bg py-20 px-5 md:px-16">
 
-<section
-class="
-paises-bg
-py-20
-px-5
-md:px-16
-">
-
-
-<h2
-
-class="
-text-center
-text-4xl
-md:text-5xl
-font-bold
-mb-12
-text-gray-800
-">
-
+<h2 class="text-center text-4xl md:text-5xl font-bold mb-12 text-gray-800">
 Cocinas Más Populares
-
 </h2>
 
+<div class="flex flex-wrap justify-center gap-8">
 
+<div class="w-full sm:w-80 bg-white rounded-2xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-3 relative">
 
-
-<div
-
-class="
-flex
-flex-wrap
-justify-center
-gap-8
-">
-
-
-
-
-
-<!-- PERÚ -->
-
-<div
-
-class="
-w-full
-sm:w-80
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-lg
-transition
-duration-300
-hover:-translate-y-3
-relative
-">
-
-
-<span
-
-onclick="favorito('Perú',this)"
-
-class="
-absolute
-top-3
-right-3
-text-3xl
-cursor-pointer
-select-none
-z-10
-">
-
+<span onclick="favorito('Perú',this)" class="absolute top-3 right-3 text-3xl cursor-pointer select-none z-10">
 🤍
-
 </span>
 
+<img src="img/Peru.jpg" alt="Perú" class="w-full h-60 object-cover">
 
-
-<img
-
-src="img/Peru.jpg"
-
-alt="Perú"
-
-class="
-w-full
-h-60
-object-cover
-">
-
-
-<h3
-
-class="
-text-center
-mt-5
-text-3xl
-font-bold
-text-orange-500
-">
-
+<h3 class="text-center mt-5 text-3xl font-bold text-orange-500">
 Perú
-
 </h3>
 
-
-
-<p
-
-class="
-p-5
-text-center
-leading-7
-text-gray-600
-">
-
-Disfruta del ceviche, ají de gallina,
-lomo saltado y más.
-
+<p class="p-5 text-center leading-7 text-gray-600">
+Disfruta del ceviche, ají de gallina, lomo saltado y más.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-80 bg-white rounded-2xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-3 relative">
 
-
-
-
-
-
-
-<!-- ITALIA -->
-
-
-<div
-
-class="
-w-full
-sm:w-80
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-lg
-transition
-duration-300
-hover:-translate-y-3
-relative
-">
-
-
-<span
-
-onclick="favorito('Italia',this)"
-
-class="
-absolute
-top-3
-right-3
-text-3xl
-cursor-pointer
-select-none
-z-10
-">
-
+<span onclick="favorito('Italia',this)" class="absolute top-3 right-3 text-3xl cursor-pointer select-none z-10">
 🤍
-
 </span>
 
+<img src="img/Italia.jpg" alt="Italia" class="w-full h-60 object-cover">
 
-
-<img
-
-src="img/Italia.jpg"
-
-alt="Italia"
-
-class="
-w-full
-h-60
-object-cover
-">
-
-
-
-<h3
-
-class="
-text-center
-mt-5
-text-3xl
-font-bold
-text-orange-500
-">
-
+<h3 class="text-center mt-5 text-3xl font-bold text-orange-500">
 Italia
-
 </h3>
 
-
-
-<p
-
-class="
-p-5
-text-center
-leading-7
-text-gray-600
-">
-
-Descubre pizzas artesanales,
-pastas y lasañas.
-
+<p class="p-5 text-center leading-7 text-gray-600">
+Descubre pizzas artesanales, pastas y lasañas.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-80 bg-white rounded-2xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-3 relative">
 
-
-
-
-
-
-
-<!-- JAPÓN -->
-
-
-<div
-
-class="
-w-full
-sm:w-80
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-lg
-transition
-duration-300
-hover:-translate-y-3
-relative
-">
-
-
-<span
-
-onclick="favorito('Japon',this)"
-
-class="
-absolute
-top-3
-right-3
-text-3xl
-cursor-pointer
-select-none
-z-10
-">
-
+<span onclick="favorito('Japon',this)" class="absolute top-3 right-3 text-3xl cursor-pointer select-none z-10">
 🤍
-
 </span>
 
+<img src="img/Japon.png" alt="Japón" class="w-full h-60 object-cover">
 
-
-
-<img
-
-src="img/Japon.png"
-
-alt="Japón"
-
-class="
-w-full
-h-60
-object-cover
-">
-
-
-
-<h3
-
-class="
-text-center
-mt-5
-text-3xl
-font-bold
-text-orange-500
-">
-
+<h3 class="text-center mt-5 text-3xl font-bold text-orange-500">
 Japón
-
 </h3>
 
-
-
-<p
-
-class="
-p-5
-text-center
-leading-7
-text-gray-600
-">
-
-Sushi, ramen y la esencia
-de la cocina oriental.
-
+<p class="p-5 text-center leading-7 text-gray-600">
+Sushi, ramen y la esencia de la cocina oriental.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-80 bg-white rounded-2xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-3 relative">
 
-
-
-
-
-
-
-<!-- FRANCIA -->
-
-
-<div
-
-class="
-w-full
-sm:w-80
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-lg
-transition
-duration-300
-hover:-translate-y-3
-relative
-">
-
-
-<span
-
-onclick="favorito('Francia',this)"
-
-class="
-absolute
-top-3
-right-3
-text-3xl
-cursor-pointer
-select-none
-z-10
-">
-
+<span onclick="favorito('Francia',this)" class="absolute top-3 right-3 text-3xl cursor-pointer select-none z-10">
 🤍
-
 </span>
 
+<img src="img/Francia.png" alt="Francia" class="w-full h-60 object-cover">
 
-
-<img
-
-src="img/Francia.png"
-
-alt="Francia"
-
-class="
-w-full
-h-60
-object-cover
-">
-
-
-
-<h3
-
-class="
-text-center
-mt-5
-text-3xl
-font-bold
-text-orange-500
-">
-
+<h3 class="text-center mt-5 text-3xl font-bold text-orange-500">
 Francia
-
 </h3>
 
-
-
-<p
-
-class="
-p-5
-text-center
-leading-7
-text-gray-600
-">
-
-Alta cocina, postres gourmet y recetas
-tradicionales francesas.
-
+<p class="p-5 text-center leading-7 text-gray-600">
+Alta cocina, postres gourmet y recetas tradicionales francesas.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-80 bg-white rounded-2xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-3 relative">
 
-
-
-
-
-
-
-<!-- MÉXICO -->
-
-
-<div
-
-class="
-w-full
-sm:w-80
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-lg
-transition
-duration-300
-hover:-translate-y-3
-relative
-">
-
-
-<span
-
-onclick="favorito('Mexico',this)"
-
-class="
-absolute
-top-3
-right-3
-text-3xl
-cursor-pointer
-select-none
-z-10
-">
-
+<span onclick="favorito('Mexico',this)" class="absolute top-3 right-3 text-3xl cursor-pointer select-none z-10">
 🤍
-
 </span>
 
+<img src="img/Mexico.jpg" alt="México" class="w-full h-60 object-cover">
 
-
-
-<img
-
-src="img/Mexico.jpg"
-
-alt="México"
-
-class="
-w-full
-h-60
-object-cover
-">
-
-
-
-<h3
-
-class="
-text-center
-mt-5
-text-3xl
-font-bold
-text-orange-500
-">
-
+<h3 class="text-center mt-5 text-3xl font-bold text-orange-500">
 México
-
 </h3>
 
-
-
-<p
-
-class="
-p-5
-text-center
-leading-7
-text-gray-600
-">
-
-Tacos, enchiladas y sabores intensos
-de la cocina mexicana.
-
+<p class="p-5 text-center leading-7 text-gray-600">
+Tacos, enchiladas y sabores intensos de la cocina mexicana.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-80 bg-white rounded-2xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-3 relative">
 
-
-
-
-
-
-
-<!-- ESPAÑA -->
-
-
-<div
-
-class="
-w-full
-sm:w-80
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-lg
-transition
-duration-300
-hover:-translate-y-3
-relative
-">
-
-
-<span
-
-onclick="favorito('España',this)"
-
-class="
-absolute
-top-3
-right-3
-text-3xl
-cursor-pointer
-select-none
-z-10
-">
-
+<span onclick="favorito('España',this)" class="absolute top-3 right-3 text-3xl cursor-pointer select-none z-10">
 🤍
-
 </span>
 
+<img src="img/España.jpg" alt="España" class="w-full h-60 object-cover">
 
-
-<img
-
-src="img/España.jpg"
-
-alt="España"
-
-class="
-w-full
-h-60
-object-cover
-">
-
-
-
-<h3
-
-class="
-text-center
-mt-5
-text-3xl
-font-bold
-text-orange-500
-">
-
+<h3 class="text-center mt-5 text-3xl font-bold text-orange-500">
 España
-
 </h3>
 
-
-
-<p
-
-class="
-p-5
-text-center
-leading-7
-text-gray-600
-">
-
-Paella, tapas y recetas mediterráneas
-llenas de sabor.
-
+<p class="p-5 text-center leading-7 text-gray-600">
+Paella, tapas y recetas mediterráneas llenas de sabor.
 </p>
 
-
 </div>
 
-
-
 </div>
-
 
 </section>
 
-<!-- REGISTRO -->
+<section class="bg-orange-500 py-16 px-5 text-center text-white">
 
-<section
-
-class="
-bg-orange-500
-py-16
-px-5
-text-center
-text-white
-">
-
-
-<h2
-
-class="
-text-3xl
-md:text-4xl
-font-bold
-mb-4
-">
-
+<h2 class="text-3xl md:text-4xl font-bold mb-4">
 🍽️ Únete a Mundo Gourmet
-
 </h2>
 
-
-
-<p
-
-class="
-text-lg
-mb-8
-">
-
-Regístrate gratis y descubre nuevas recetas
-de todo el mundo.
-
+<p class="text-lg mb-8">
+Regístrate gratis y descubre nuevas recetas de todo el mundo.
 </p>
 
+<form class="flex flex-col md:flex-row justify-center items-center gap-4" onsubmit="registrarse(); return false;">
 
+<input type="text" id="nombre" placeholder="👤 Escribe tu nombre" class="w-full md:w-72 p-4 rounded-lg outline-none text-gray-800 cursor-text focus:ring-2 focus:ring-black">
 
+<input type="email" id="correo" placeholder="📧 Escribe tu correo" class="w-full md:w-72 p-4 rounded-lg outline-none text-gray-800 cursor-text focus:ring-2 focus:ring-black">
 
-<form
-
-class="
-flex
-flex-col
-md:flex-row
-justify-center
-items-center
-gap-4
-"
-
-onsubmit="registrarse(); return false;"
-
->
-
-
-<input
-
-type="text"
-
-id="nombre"
-
-placeholder="👤 Escribe tu nombre"
-
-class="
-w-full
-md:w-72
-p-4
-rounded-lg
-outline-none
-text-gray-800
-cursor-text
-focus:ring-2
-focus:ring-black
-"
-
->
-
-
-
-
-<input
-
-type="email"
-
-id="correo"
-
-placeholder="📧 Escribe tu correo"
-
-class="
-w-full
-md:w-72
-p-4
-rounded-lg
-outline-none
-text-gray-800
-cursor-text
-focus:ring-2
-focus:ring-black
-"
-
->
-
-
-
-
-<button
-
-type="submit"
-
-class="
-bg-black
-text-white
-px-8
-py-4
-rounded-lg
-hover:bg-gray-900
-hover:scale-105
-transition
-">
-
+<button type="submit" class="bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-900 hover:scale-105 transition">
 Registrarme
-
 </button>
-
-
 
 </form>
 
-
 </section>
 
+<section class="bg-black text-white py-20 px-5 md:px-10 text-center">
 
-
-
-
-
-
-
-
-<!-- CURIOSIDADES -->
-
-
-<section
-
-class="
-bg-black
-text-white
-py-20
-px-5
-md:px-10
-text-center
-">
-
-
-<h2
-
-class="
-text-3xl
-md:text-4xl
-font-bold
-text-orange-500
-mb-12
-">
-
+<h2 class="text-3xl md:text-4xl font-bold text-orange-500 mb-12">
 💡 ¿Sabías que...?
-
 </h2>
 
+<div class="flex flex-wrap justify-center gap-8">
 
+<div class="w-full sm:w-72 bg-neutral-900 p-6 rounded-2xl shadow-lg transition hover:-translate-y-2">
 
-
-<div
-
-class="
-flex
-flex-wrap
-justify-center
-gap-8
-">
-
-
-
-
-
-<div
-
-class="
-w-full
-sm:w-72
-bg-neutral-900
-p-6
-rounded-2xl
-shadow-lg
-transition
-hover:-translate-y-2
-">
-
-
-<h3
-
-class="
-text-2xl
-font-bold
-text-orange-500
-mb-4
-">
-
+<h3 class="text-2xl font-bold text-orange-500 mb-4">
 🇵🇪 Perú
-
 </h3>
 
-
-<p
-
-class="
-leading-7
-text-gray-300
-">
-
-Perú posee más de
-
-<strong>
-4,000 variedades de papa
-</strong>
-
-siendo uno de los países con mayor diversidad
-de este alimento.
-
+<p class="leading-7 text-gray-300">
+Perú posee más de <strong>4,000 variedades de papa</strong>, siendo uno de los países con mayor diversidad de este alimento.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-72 bg-neutral-900 p-6 rounded-2xl shadow-lg transition hover:-translate-y-2">
 
-
-
-
-
-
-<div
-
-class="
-w-full
-sm:w-72
-bg-neutral-900
-p-6
-rounded-2xl
-shadow-lg
-transition
-hover:-translate-y-2
-">
-
-
-<h3
-
-class="
-text-2xl
-font-bold
-text-orange-500
-mb-4
-">
-
+<h3 class="text-2xl font-bold text-orange-500 mb-4">
 🇮🇹 Italia
-
 </h3>
 
-
-
-<p
-
-class="
-leading-7
-text-gray-300
-">
-
-La pizza moderna nació en la ciudad de
-
-<strong>
-Nápoles
-</strong>
-
-durante el siglo XVIII.
-
+<p class="leading-7 text-gray-300">
+La pizza moderna nació en la ciudad de <strong>Nápoles</strong> durante el siglo XVIII.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-72 bg-neutral-900 p-6 rounded-2xl shadow-lg transition hover:-translate-y-2">
 
-
-
-
-
-
-
-<div
-
-class="
-w-full
-sm:w-72
-bg-neutral-900
-p-6
-rounded-2xl
-shadow-lg
-transition
-hover:-translate-y-2
-">
-
-
-<h3
-
-class="
-text-2xl
-font-bold
-text-orange-500
-mb-4
-">
-
+<h3 class="text-2xl font-bold text-orange-500 mb-4">
 🇯🇵 Japón
-
 </h3>
 
-
-
-<p
-
-class="
-leading-7
-text-gray-300
-">
-
-El sushi originalmente era un método para
-conservar el pescado utilizando arroz
-fermentado.
-
+<p class="leading-7 text-gray-300">
+El sushi originalmente era un método para conservar el pescado utilizando arroz fermentado.
 </p>
-
 
 </div>
 
+<div class="w-full sm:w-72 bg-neutral-900 p-6 rounded-2xl shadow-lg transition hover:-translate-y-2">
 
-
-
-
-
-
-<div
-
-class="
-w-full
-sm:w-72
-bg-neutral-900
-p-6
-rounded-2xl
-shadow-lg
-transition
-hover:-translate-y-2
-">
-
-
-<h3
-
-class="
-text-2xl
-font-bold
-text-orange-500
-mb-4
-">
-
+<h3 class="text-2xl font-bold text-orange-500 mb-4">
 🇲🇽 México
-
 </h3>
 
-
-
-<p
-
-class="
-leading-7
-text-gray-300
-">
-
-El chocolate fue consumido por las antiguas
-civilizaciones maya y azteca mucho antes
-de llegar a Europa.
-
+<p class="leading-7 text-gray-300">
+El chocolate fue consumido por las antiguas civilizaciones maya y azteca mucho antes de llegar a Europa.
 </p>
 
-
 </div>
 
-
-
 </div>
-
 
 </section>
 
-
-
-
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer
-
-class="
-bg-neutral-900
-text-white
-text-center
-p-6
-">
-
+<footer class="bg-neutral-900 text-white text-center p-6">
 
 <p>
-
 © 2026 Mundo Gourmet - Derechos Reservados
-
 </p>
-
 
 </footer>
 
+<div class="fixed bottom-5 right-5 flex flex-col gap-4 z-50">
 
+<a href="https://wa.me/51999999999" target="_blank" class="bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
 
-
-
-
-
-
-
-<!-- REDES FLOTANTES -->
-
-
-<div
-
-class="
-fixed
-bottom-5
-right-5
-flex
-flex-col
-gap-4
-z-50
-">
-
-
-
-<a
-
-href="https://wa.me/51999999999"
-
-target="_blank"
-
-class="
-bg-green-500
-w-14
-h-14
-rounded-full
-flex
-items-center
-justify-center
-shadow-lg
-hover:scale-110
-transition
-">
-
-
-<img
-
-src="img/whatsApp.png"
-
-alt="WhatsApp"
-
-class="
-w-8
-h-8
-">
+<img src="img/whatsApp.png" alt="WhatsApp" class="w-8 h-8">
 
 </a>
 
+<a href="https://instagram.com/TU_USUARIO" target="_blank" class="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition" style="background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);">
 
-
-
-
-
-<a
-
-href="https://instagram.com/TU_USUARIO"
-
-target="_blank"
-
-class="
-w-14
-h-14
-rounded-full
-flex
-items-center
-justify-center
-shadow-lg
-hover:scale-110
-transition
-"
-
-style="
-background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
-">
-
-
-<img
-
-src="img/instagram.png"
-
-alt="Instagram"
-
-class="
-w-8
-h-8
-">
+<img src="img/instagram.png" alt="Instagram" class="w-8 h-8">
 
 </a>
-
-
-
 
 </div>
 
 <script>
 
+window.onload=function(){
 
-// =====================================
-// AL CARGAR LA PÁGINA
-// =====================================
+let hora=new Date().getHours();
+let saludo;
 
-window.onload = function(){
+if(hora<12){
+    saludo="☀️ Buenos días";
+}
+else if(hora<18){
+    saludo="🌤️ Buenas tardes";
+}
+else{
+    saludo="🌙 Buenas noches";
+}
 
+const recetas=[
+"🍲 Ceviche Peruano",
+"🍕 Pizza Italiana",
+"🍣 Sushi Japonés",
+"🥘 Paella Española",
+"🌮 Tacos Mexicanos"
+];
 
-    let hora = new Date().getHours();
+let receta=recetas[Math.floor(Math.random()*recetas.length)];
 
-    let saludo;
+alert(
+saludo+
+"\n\n🍽️ Bienvenido a Mundo Gourmet"+
+"\n\nReceta recomendada del día:"+
+"\n"+receta
+);
 
+let tema=localStorage.getItem("tema");
 
+if(tema==="oscuro"){
 
-    if(hora < 12){
+document.body.classList.add("dark");
 
-        saludo = "☀️ Buenos días";
+document.getElementById("modo").innerHTML="☀️ Modo Claro";
 
-    }
-    else if(hora < 18){
-
-        saludo = "🌤️ Buenas tardes";
-
-    }
-    else{
-
-        saludo = "🌙 Buenas noches";
-
-    }
-
-
-
-
-    const recetas = [
-
-        "🍲 Ceviche Peruano",
-        "🍕 Pizza Italiana",
-        "🍣 Sushi Japonés",
-        "🥘 Paella Española",
-        "🌮 Tacos Mexicanos"
-
-    ];
-
-
-
-    let receta = recetas[
-        Math.floor(Math.random()*recetas.length)
-    ];
-
-
-
-
-    alert(
-
-        saludo +
-        "\n\n🍽️ Bienvenido a Mundo Gourmet" +
-        "\n\nReceta recomendada del día:" +
-        "\n" + receta
-
-    );
-
-
-
-
-
-
-    // Recuperar modo oscuro guardado
-
-
-    let tema = localStorage.getItem("tema");
-
-
-
-    if(tema === "oscuro"){
-
-
-        document.body.classList.add("dark");
-
-
-        document.getElementById("modo").innerHTML =
-        "☀️ Modo Claro";
-
-
-    }
-
-
+}
 
 };
 
-
-
-
-
-
-
-
-
-// =====================================
-// CALIFICAR PÁGINA
-// =====================================
-
-
 function calificar(){
 
+let nota=prompt("⭐ Califica nuestra página del 1 al 5:");
 
+if(nota>=1 && nota<=5){
 
-let nota = prompt(
-"⭐ Califica nuestra página del 1 al 5:"
-);
-
-
-
-
-if(nota >= 1 && nota <= 5){
-
-
-alert(
-"¡Gracias por tu calificación de "
-+ nota +
-" estrellas! ⭐"
-);
-
-
+alert("¡Gracias por tu calificación de "+nota+" estrellas! ⭐");
 
 }
-
 else{
 
-
-alert(
-"⚠️ Ingresa un número válido del 1 al 5."
-);
-
-
+alert("⚠️ Ingresa un número válido del 1 al 5.");
 
 }
 
-
 }
 
+function favorito(pais,elemento){
 
-
-
-
-
-
-
-
-// =====================================
-// FAVORITOS
-// =====================================
-
-
-function favorito(pais, elemento){
-
-
-
-if(elemento.innerHTML.trim() === "🤍"){
-
-
+if(elemento.innerHTML.trim()=="🤍"){
 
 elemento.innerHTML="❤️";
 
+localStorage.setItem("favorito",pais);
 
-
-localStorage.setItem(
-"favorito",
-pais
-);
-
-
-
-alert(
-"❤️ "+pais+" fue agregado a favoritos."
-);
-
-
+alert("❤️ "+pais+" fue agregado a favoritos.");
 
 }
 
 else{
 
-
-
-let confirmar = confirm(
-
-"¿Deseas eliminar "
-+ pais +
-" de favoritos?"
-
+let confirmar=confirm(
+"¿Deseas eliminar "+pais+" de favoritos?"
 );
-
-
 
 if(confirmar){
 
-
-
 elemento.innerHTML="🤍";
 
+localStorage.removeItem("favorito");
 
-
-localStorage.removeItem(
-"favorito"
-);
-
-
-
-alert(
-"💔 "+pais+" fue eliminado de favoritos."
-);
-
-
+alert("💔 "+pais+" fue eliminado de favoritos.");
 
 }
 
-
-
 }
 
-
-
 }
-
-
-
-
-
-
-
-
-
-// =====================================
-// MODO OSCURO
-// =====================================
-
 
 function cambiarModo(){
 
-
-
 document.body.classList.toggle("dark");
 
+let boton=document.getElementById("modo");
 
+if(document.body.classList.contains("dark")){
 
-let boton =
-document.getElementById("modo");
+boton.innerHTML="☀️ Modo Claro";
 
-
-
-
-if(
-document.body.classList.contains("dark")
-){
-
-
-
-boton.innerHTML =
-"☀️ Modo Claro";
-
-
-
-localStorage.setItem(
-"tema",
-"oscuro"
-);
-
-
+localStorage.setItem("tema","oscuro");
 
 }
 
 else{
 
+boton.innerHTML="🌙 Modo Oscuro";
 
-
-boton.innerHTML =
-"🌙 Modo Oscuro";
-
-
-
-localStorage.setItem(
-"tema",
-"claro"
-);
-
-
+localStorage.setItem("tema","claro");
 
 }
 
-
-
 }
-
-
-
-
-
-
-
-
-
-// =====================================
-// REGISTRO
-// =====================================
-
 
 function registrarse(){
 
+let nombre=document.getElementById("nombre").value.trim();
 
+let correo=document.getElementById("correo").value.trim();
 
-let nombre =
-document.getElementById("nombre").value.trim();
+if(nombre==="" || correo===""){
 
-
-
-let correo =
-document.getElementById("correo").value.trim();
-
-
-
-
-
-if(nombre === "" || correo === ""){
-
-
-
-alert(
-"⚠️ Completa todos los campos."
-);
-
-
+alert("⚠️ Completa todos los campos.");
 
 return;
 
-
 }
 
-
-
-
-
-let patronCorreo =
-/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
-
-
+let patronCorreo=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 if(!patronCorreo.test(correo)){
 
-
-
-alert(
-"❌ Ingresa un correo electrónico válido."
-);
-
-
+alert("❌ Ingresa un correo electrónico válido.");
 
 return;
 
-
 }
 
-
-
-
-
-alert(
-"✅ ¡Te registraste correctamente en Mundo Gourmet!"
-);
-
-
-
-
+alert("✅ ¡Te registraste correctamente en Mundo Gourmet!");
 
 document.getElementById("nombre").value="";
 
 document.getElementById("correo").value="";
 
-
-
 }
-
-
-
-
-
-
-
-
-
-// =====================================
-// MENÚ HAMBURGUESA
-// =====================================
-
 
 function toggleMenu(boton){
 
-
-
-let menu =
-document.getElementById("menu");
-
-
+let menu=document.getElementById("menu");
 
 menu.classList.toggle("activo");
 
-
-
-
 if(menu.classList.contains("activo")){
 
-
 boton.innerHTML="✖";
-
 
 }
 
 else{
 
-
 boton.innerHTML="☰";
 
-
 }
 
-
-
 }
-
-
 
 </script>
-
 
 </body>
 
